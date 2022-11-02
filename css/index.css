@@ -9,6 +9,8 @@ a{
     text-decoration: none;
     color: #FE4553;
 }
+
+/* Header */
 .header{
     position: absolute;
     width: 1440px;
@@ -61,6 +63,7 @@ a{
 .navbar button a{
     color: #FE4553;
 }
+
 /* BANNER */
 .banner{
     position: absolute;
@@ -109,10 +112,28 @@ a{
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-
+    
     color: #FE4553;
 } */
 
+/* Noticias */
+.caixas h3{
+    position: absolute;
+    width: 235px;
+    height: 61px;
+    left: 603px;
+    top: 1747px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+
+    color: #101823;
+}
+
+/* Sobre */
 .caixa img{
     position: absolute;
     width: 551px;
@@ -151,10 +172,67 @@ a{
     font-weight: 400;
     font-size: 34px;
     line-height: 41px;
-    
 
     color: #101823;
 }
 
+.caixas{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.caixa{
+    width: 15vw;
+    height: 8vh;
+}
 
+
+/* footer{
+    position: absolute;
+    width: 1440px;
+    height: 301px;
+
+    background: #101823;
+}
+
+.footer .contato{
+    margin: 20px;
+    height: 60px;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.info h3{
+    font-size: 30px;
+    color: #FE4553;
+    margin-bottom: 6%;
+}
+
+.info p{
+    padding: 3px;
+    margin-left: 15%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.image{
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 52%;
+}
+.info{
+    flex-direction: row;
+}
+
+.p p{
+    margin-top: 150%;
+    margin-left: -250%;
+} */
 
