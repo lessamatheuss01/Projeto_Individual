@@ -1,0 +1,169 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #FE4553;
+}
+.header{
+    position: absolute;
+    width: 1440px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+    
+    background: #101823;
+}
+
+.navbar .active{
+    background-color: #FE4553;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 10px;
+    margin-left: 60%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+}
+.navbar ul li{
+    justify-content: space-around;
+    padding: 5px;
+    list-style: none;
+    margin: 0px 3px;
+    width: 55px;
+    justify-content: center;
+    text-align: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FE4553;
+}
+.navbar button{
+    margin-top: -100px;
+    height: 30%;
+    width: 25%;
+    padding: 5px 30px 5px 30px;
+    border-radius: 1px;
+    border-color: #FE4553;
+    color: #FE4553;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+.navbar button a{
+    color: #FE4553;
+}
+/* BANNER */
+.banner{
+    position: absolute;
+    width: 1440px;
+    height: 717px;
+    left: 0px;
+    top: 113px;
+    
+    background-image: url(../assets/imagem\ home.jpg);
+}
+
+.slogan{
+    margin-bottom: 55%;
+    height: 40%;
+    margin-bottom: 150px;
+    color: #FE4553;
+    padding: 10% 0;
+    font-family: 'play';
+}
+
+/* .slogan h2{
+    position: absolute;
+    width: 548px;
+    height: 67px;
+    left: 37px;
+    top: 166px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+
+    color: #FE4553;
+} */
+
+/* .slogan p{
+    position: absolute;
+    width: 705px;
+    height: 43px;
+    left: 183px;
+    top: 802px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FE4553;
+} */
+
+.caixa img{
+    position: absolute;
+    width: 551px;
+    height: 551px;
+    left: 38px;
+    top: 937px;
+
+    background: url(../assets/logo\ valorant.png);
+}
+
+.caixa h5{
+    position: absolute;
+    width: 265px;
+    height: 61px;
+    left: 888px;
+    top: 876px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+
+    color: #101823;
+}
+
+.caixa p{
+    position: absolute;
+    width: 716px;
+    height: 305px;
+    left: 662px;
+    top: 1097px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    
+
+    color: #101823;
+}
+
+/* .caixa b{
+    position: absolute;
+    width: 422px;
+    height: 0px;
+    left: 783px;
+    top: 1075px;
+
+    border: 3px solid #FE4553;
+    transform: rotate(-0.27deg);
+} */
+
