@@ -9,8 +9,7 @@ a{
     text-decoration: none;
     color: #FE4553;
 }
-
-/* Header */
+/* HEADER */
 .header{
     position: absolute;
     width: 1440px;
@@ -75,7 +74,9 @@ a{
     background-image: url(../assets/imagem\ home.jpg);
 }
 
-.slogan{
+/* Slogan */
+
+/* .slogan{
     margin-bottom: 55%;
     height: 40%;
     margin-bottom: 150px;
@@ -98,9 +99,8 @@ a{
     line-height: 61px;
 
     color: #FE4553;
-} */
-
-/* .slogan p{
+} 
+ .slogan p{
     position: absolute;
     width: 705px;
     height: 43px;
@@ -116,7 +116,8 @@ a{
     color: #FE4553;
 } */
 
-/* Noticias */
+
+/* NOTICIAS */
 .caixas h3{
     position: absolute;
     width: 235px;
@@ -133,7 +134,124 @@ a{
     color: #101823;
 }
 
+.c1 canvas{
+    position: absolute;
+    width: 432px;
+    height: 659px;
+    left: 23px;
+    top: 1902px;
+    
+    background: #101823;
+    border-radius: 12px;
+}
+
+.c1 h3{
+    position: absolute;
+    width: 343px;
+    height: 212px;
+    left: 67px;
+    top: 2284px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    
+    color: #FE4553;
+}
+.c1 img{
+    position: absolute;
+    width: 405px;
+    height: 248px;
+    left: 36px;
+    top: 1938px;
+
+    background: url(../assets/noticia\ 01.jpg);
+}
+
+.c2 canvas{
+    position: absolute;
+    width: 432px;
+    height: 659px;
+    left: 508px;
+    top: 1902px;
+    
+    background: #101823;
+    border-radius: 12px;
+}
+
+.c2 h4{
+    position: absolute;
+    width: 326px;
+    height: 212px;
+    left: 567px;
+    top: 2284px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    
+    color: #FE4553;
+}
+
+.c2 img{
+    position: absolute;
+    width: 408.2px;
+    height: 248px;
+    left: 520px;
+    top: 1938px;
+
+    background: url(../assets/noticia\ 02.jpg);
+}
+
+
+
+.c3 h2{
+    position: absolute;
+    width: 359px;
+    height: 212px;
+    left: 996px;
+    top: 2294px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    
+    color: #FE4553;
+}
+
+.c3 canvas{
+    position: absolute;
+    width: 432px;
+    height: 659px;
+    left: 959px;
+    top: 1902px;
+    
+    background: #101823;
+    border-radius: 12px;
+}
+
+.c3 img{
+    z-index: 2;
+    position: absolute;
+    width: 405.45px;
+    height: 248px;
+    left: 972px;
+    top: 1938px;
+
+    background: url(../assets/noticia\ 03.jpeg);
+}
+ 
 /* Sobre */
+
 .caixa img{
     position: absolute;
     width: 551px;
@@ -175,17 +293,6 @@ a{
 
     color: #101823;
 }
-
-.caixas{
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-.caixa{
-    width: 15vw;
-    height: 8vh;
-}
-
 
 /* footer{
     position: absolute;
@@ -236,3 +343,31 @@ a{
     margin-left: -250%;
 } */
 
+
+
+.info{
+    position: absolute;
+    width: 1440px;
+    height: 367px;
+    left: 0px;
+    top: 2847px;
+
+    background: #101823;
+}
+
+.info h1{
+    position: absolute;
+    width: 158px;
+    height: 28px;
+    left: 398px;
+    top: 2458px;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FE4553;
+}
