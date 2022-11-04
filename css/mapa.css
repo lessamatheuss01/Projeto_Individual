@@ -64,3 +64,9 @@ a{
 .navbar button a{
     color: #FE4553;
 }
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
