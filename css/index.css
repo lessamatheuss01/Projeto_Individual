@@ -1,45 +1,46 @@
 body{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
     color: #FE4553;
 }
+
 /* HEADER */
 .header{
-    position: absolute;
-    width: 1440px;
-    height: 114px;
-    left: 0px;
-    top: 0px;
-    
+    width: 100%;
+    height: 20vh;
     background: #101823;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.navbar .active{
-    background-color: #FE4553;
+.container {
+    width: 10vw;
+    height: 100%;
+    /* padding: 5px; */
 }
 
 .navbar{
     display: flex;
     padding: 20px 10px;
-    margin-left: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar ul{
     display: flex;
-    flex-direction: row;
-    margin-top: -100px;
+    flex-direction: row;    
 }
 .navbar ul li{
     justify-content: space-around;
     padding: 5px;
     list-style: none;
-    margin: 0px 3px;
     width: 55px;
     justify-content: center;
     text-align: center;
@@ -49,7 +50,8 @@ a{
     color: #FE4553;
 }
 .navbar button{
-    margin-top: -100px;
+    display: flex;
+    align-items: center;
     height: 30%;
     width: 25%;
     padding: 5px 30px 5px 30px;
@@ -65,309 +67,81 @@ a{
 
 /* BANNER */
 .banner{
-    position: absolute;
-    width: 1440px;
-    height: 717px;
-    left: 0px;
-    top: 113px;
-    
-    background-image: url(../assets/imagem\ home.jpg);
-}
-
-/* Slogan */
-
-/* .slogan{
-    margin-bottom: 55%;
-    height: 40%;
-    margin-bottom: 150px;
-    color: #FE4553;
-    padding: 10% 0;
-    font-family: 'play';
-}
-
-/* .slogan h2{
-    position: absolute;
-    width: 548px;
-    height: 67px;
-    left: 37px;
-    top: 166px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
-
-    color: #FE4553;
-} 
- .slogan p{
-    position: absolute;
-    width: 705px;
-    height: 43px;
-    left: 183px;
-    top: 802px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    
-    color: #FE4553;
-} */
-
-
-/* NOTICIAS */
-.caixas h3{
-    position: absolute;
-    width: 235px;
-    height: 61px;
-    left: 603px;
-    top: 1747px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
-
-    color: #101823;
-}
-
-.c1 canvas{
-    position: absolute;
-    width: 432px;
-    height: 659px;
-    left: 23px;
-    top: 1902px;
-    
-    background: #101823;
-    border-radius: 12px;
-}
-
-.c1 h3{
-    position: absolute;
-    width: 343px;
-    height: 212px;
-    left: 67px;
-    top: 2284px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 53px;
-    text-align: center;
-    
-    color: #FE4553;
-}
-.c1 img{
-    position: absolute;
-    width: 405px;
-    height: 248px;
-    left: 36px;
-    top: 1938px;
-
-    background: url(../assets/noticia\ 01.jpg);
-}
-
-.c2 canvas{
-    position: absolute;
-    width: 432px;
-    height: 659px;
-    left: 508px;
-    top: 1902px;
-    
-    background: #101823;
-    border-radius: 12px;
-}
-
-.c2 h4{
-    position: absolute;
-    width: 326px;
-    height: 212px;
-    left: 567px;
-    top: 2284px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 53px;
-    text-align: center;
-    
-    color: #FE4553;
-}
-
-.c2 img{
-    position: absolute;
-    width: 408.2px;
-    height: 248px;
-    left: 520px;
-    top: 1938px;
-
-    background: url(../assets/noticia\ 02.jpg);
-}
-
-
-
-.c3 h2{
-    position: absolute;
-    width: 359px;
-    height: 212px;
-    left: 996px;
-    top: 2294px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 53px;
-    text-align: center;
-    
-    color: #FE4553;
-}
-
-.c3 canvas{
-    position: absolute;
-    width: 432px;
-    height: 659px;
-    left: 959px;
-    top: 1902px;
-    
-    background: #101823;
-    border-radius: 12px;
-}
-
-.c3 img{
-    z-index: 2;
-    position: absolute;
-    width: 405.45px;
-    height: 248px;
-    left: 972px;
-    top: 1938px;
-
-    background: url(../assets/noticia\ 03.jpeg);
-}
- 
-/* Sobre */
-
-.caixa img{
-    position: absolute;
-    width: 551px;
-    height: 551px;
-    left: 38px;
-    top: 937px;
-
-    background: url(../assets/logo\ valorant.png);
-}
-
-.caixa h5{
-    position: absolute;
-    width: 265px;
-    height: 61px;
-    left: 888px;
-    top: 876px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
-
-    color: #101823;
-}
-
-.caixa p{
-    position: absolute;
-    width: 716px;
-    height: 305px;
-    left: 662px;
-    top: 1097px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 41px;
-
-    color: #101823;
-}
-
-/* footer{
-    position: absolute;
-    width: 1440px;
-    height: 301px;
-
-    background: #101823;
-}
-
-.footer .contato{
-    margin: 20px;
-    height: 60px;
-    width: 30%;
-    justify-content: center;
-    text-align: center;
-}
-
-.info{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-}
-
-.info h3{
-    font-size: 30px;
-    color: #FE4553;
-    margin-bottom: 6%;
-}
-
-.info p{
-    padding: 3px;
-    margin-left: 15%;
     width: 100%;
-    margin-top: 3%;
+    height: 100vh;
+    background-image: url(../assets/imagem\ home.jpg);
+    background-size: cover;
 }
 
-.image{
-    position: absolute;
-    margin-top: -30%;
-    margin-left: 52%;
-}
-.info{
-    flex-direction: row;
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #FE4553;
 }
 
-.p p{
-    margin-top: 150%;
-    margin-left: -250%;
-} */
-
-
-
-.info{
-    position: absolute;
-    width: 1440px;
-    height: 367px;
-    left: 0px;
-    top: 2847px;
-
-    background: #101823;
+.social {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
 }
 
-.info h1{
-    position: absolute;
-    width: 158px;
-    height: 28px;
-    left: 398px;
-    top: 2458px;
+.caixas {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
 
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+}
+
+.social h3{
+    color: #101823;
     text-align: center;
+    margin-bottom: 150px;
 
-    color: #FE4553;
+}
+
+.caixa {
+    width: 25vw;
+    height: 60vh;
+    background-color: #101823;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.caixa .img1 {
+    background-image: url(../assets/noticia01.jpg);
+    width: 20vw;
+    height: 40vh;
+    background-size: 30vw;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.caixa .img2 {
+    background-image: url(../assets/noticia02.jpg);
+    width: 20vw;
+    height: 40vh;
+    background-size: 30vw;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.caixa .img3 {
+    background-image: url(../assets/noticia03.jpg);
+    width: 20vw;
+    height: 40vh;
+    background-size: 30vw;
+    background-position: center;
+    border-radius: 20px;
+
+}
+
+.caixa p {
+    color: white;
 }
