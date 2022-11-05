@@ -62,6 +62,7 @@ a{
     background-color: Transparent;
     background-repeat:no-repeat;
 }
+
 .navbar button a{
     color: #FE4553;
 }
@@ -76,11 +77,12 @@ a{
 
 .slogan {
     color: #FE4553;
-    position: relative;
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: center 
+    justify-content: space-between;
+    flex-direction: column;
+
 }
 .slogan h1{
     margin: 0;
@@ -89,45 +91,47 @@ a{
 
 
 .slogan p{
-    top: 635px;
-    position: absolute;
+
     margin: 4;
     font-size: 200%;
 }
 
 /* SOBRE O JOGO */
 .histo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: white;
     width: 100%;
     height: 100vh;
+    padding-top: 100px;
 }
 
-.histo h3{
-    position: absolute;
-    left: -42vh;
-    width: 100%;
-    height: 100vh;
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre h3{
+ 
     line-height: 75px;
-    font-size: 50px;
+    font-size: 55px;
     color: #101823;
-    text-align: right;
-    margin-bottom: 100px;
+    text-align: center;
+    
     
 }
 
-.box img{
-    position: absolute;
-    width:400px;
-    height: -100px;
-    left: 60px;
-    top: 1050px;
+.sobre p{
+    display: flex;
     align-items: center;
-}
-
-.box2 p{
-    position: absolute;
+    flex-direction: center;
+    justify-content: center;
     top: 1065px;
-    left: 90vh;
+    left: 100vh;
     font-size: 34px;
     font-weight: 400;
     line-height: 41px;
@@ -136,6 +140,18 @@ a{
     text-align: center;
     margin-bottom: 100px;
 }
+
+.box img{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: left;
+    width:400px;
+    height: -100px;
+    left: 60px;
+    top: 1050px;
+}
+
 
 /* Social */
 .social {
@@ -154,13 +170,23 @@ a{
 
 }
 
+.social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+
 .social h3{
-    width: 100vw;
+    width: 50vw;
     height: 15vh;
     font-size: 50px;
     color: #101823;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
 }
 
@@ -213,8 +239,56 @@ a{
     font-size: 20px;
 }
 
+/* FOOTER */
 footer {
+    display: flex;
     width: 100%;
-    height: 30vh;
+    height: 60vh;
+    margin: 0;
     background-color: #101823;
+}
+
+.footer .contato{
+    margin: 20px;
+    height: 60px;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+footer .logo img{
+    height: 20vh;
+    margin-top: 35px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+
+.info h3{
+    font-size: 30px;
+    color: #FE4553;
+    margin-bottom: 6px;
+}
+
+.info p{
+    padding: 3px;
+    margin-left: 15%;
+    width: 100%;
+    margin-top: 7%;
+    color: #FE4553;
+}
+
+.image{
+    position: relative;
+    margin-top: -30%;
+    margin-left: 52%;
+}
+
+.info{
+    flex-direction: row;
 }
