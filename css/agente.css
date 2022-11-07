@@ -65,9 +65,10 @@ a{
     color: #FE4553;
 }
 
-/* FOOTER */
-footer {
+/* BANNER */
+.banner{
     width: 100%;
-    height: 30vh;
-    background-color: #FE4553;
+    height: 100vh;
+    background-image: url(../assets/VALORANTcypher.jpg);
+    background-size: cover;
 }
