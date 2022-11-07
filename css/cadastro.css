@@ -64,3 +64,19 @@ a{
 .navbar button a{
     color: #FE4553;
 }
+
+.cadastro{
+    height: 520px;
+    width: 70%;
+    padding-bottom: 25px;
+}
+
+.imagem{
+    margin-left: 75%;
+    margin-top: -1px;
+    height: 50vh;
+}
+
+.imagem img{
+    height: 75vh;
+}
