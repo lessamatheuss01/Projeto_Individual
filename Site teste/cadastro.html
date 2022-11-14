@@ -117,7 +117,7 @@
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
-        var sobrenomeVar = sobrenome_input.value
+        var sobrenomeVar = sobrenome_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
@@ -145,7 +145,8 @@
                 nomeServer: nomeVar,
                 sobrenomeServer: sobrenomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                confimacaosenhaServer: confirmacaoSenhaVar
             })
         }).then(function (resposta) {
 
@@ -160,7 +161,7 @@
                     window.location = "login.html";
                 }, "2000")
                 
-                // limparFormulario();
+                limparFormulario();
                 // finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
