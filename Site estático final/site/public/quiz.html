@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js/funcoes.js">
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="icon" type="imagem/png" href="./assets/logo-valorantomega.png">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="janela">
+        <div class="header-left">
+
+            <img src="./assets/perfil01.png" class="userimg">
+
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+            
+            <div class="btn-nav-white">
+                <a href="./perfil.html">
+                    <h3>Perfil</h3>
+                </a>
+            </div>
+    
+            <div class="btn-nav-white">
+                <a href="./dashboard.html">
+                    <h3>Grafico</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="./elo.html">
+                    <h3>Sorteio</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="./mural.html">
+                    <h3>Avaliação</h3>
+                </a>
+            </div>
+        
+            <button onclick="baixar()"><a href="https://playvalorant.com/pt-br/" target="_blank" rel="noopener noreferrer">Baixar</a></button>
+
+            <div class="btn-logout" onclick="limparSessao()">
+                <img src="./assets/sair.png" class="logout">
+            </div>
+        </div>
+
+            <div class="caixa">
+                <h2>Quiz de guia
+                    de iniciantes
+                </h2>
+                <label>Em uma partida o heroísmo é esencial ?</label>
+                <select id="resposta0">
+                    <option value="">--Responda--</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+                <label>Qual a diferença entre atacantes e defensores ?</label>
+                <select id="resposta1">
+                    <option value="">--Responda--</option>
+                    <option value="Atacantes defende sua base e Defensores ataca">Atacantes defende sua base e Defensores ataca</option>
+                    <option value="Desenfores defendem sua base dos atacantes e os atacantes ataca os inimigos">Desenfores defendem sua base dos atacantes e os atacantes ataca os inimigos</option>
+                </select>
+                <label>Quais são os quatro passos é esencial no mapa ?</label>
+                <select id="resposta2">
+                    <option value="">--Responda--</option>
+                    <option value="Plantar/Adaptação/Perspectivas/Logística">Plantar/Adaptação/Perspectivas/Logística</option>
+                    <option value="Atacar/Atirar/Poder">Atacar/Atirar/Poder</option>
+                </select>
+                <label>Quais funções essencial em batalha ?</label>
+                    <select id="resposta3">
+                        <option value="">--Responda--</option>
+                        <option value="Ouvir o time, parar e atirar, combar o inimigo">Ouvir o time, parar e atirar, combar o inimigo</option>
+                        <option value="Atirar, não escutar, sair atirando em tudo">Atirar, não escutar, sair atirando em tudo</option>
+                        <option value="Duelista">Duelista</option>
+                    </select>
+                <label>Qual é o ciclo tatico após um tiroteio ?</label>
+                <select id="resposta4">
+                    <option value="">--Responda--</option>
+                    <option value="Atirar/Usar o poder/Não escutar">Atirar/Usar o poder/Não escutar</option>
+                    <option value="Execução/Informações/Planejamento">Execução/Informações/Planejamento</option>
+                </select>
+                
+                <br>
+                <br>
+                <button onclick="salvar()">Salvar</button>
+                <button style="display: none;" onclick="verificar()" id="verificar">Verificar</button>
+                <div id="div_mensagem" class="mensagem"></div>
+            </div>
+            
+            <div class="resposta">
+                <h2>Respostas Certas do Quiz</h2>
+                <div id="div_certas" class="pergunta"></div>
+            </div>
+        </div>
+</body>
+</html>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+    
+    function salvar(){
+        var resultadosVar = [document.getElementById('resposta0').value,
+        document.getElementById('resposta1').value,
+        document.getElementById('resposta2').value,
+        document.getElementById('resposta3').value,
+        document.getElementById('resposta4').value]
+
+        for (index = 1; index < resultadosVar.length; index++) {
+            if(resultadosVar[index] == ""){
+                alert('Campos estão vazios')
+                break
+            }else{
+                div_mensagem.innerHTML = `Respostas Salvas:<br> 1° ${resultadosVar[0]}<br> 2° ${resultadosVar[1]} <br> 3° ${resultadosVar[2]}<br> 4° ${resultadosVar[3]}<br> 5° ${resultadosVar[4]}`
+            }
+            document.getElementById('verificar').style.display ='block'
+        }
+    } 
+
+
+    function verificar(){
+        var certas = [
+            "1°: SIM <br> 2°: Desenfores defendem sua base dos atacantes e os atacantes ataca os inimigos <br> 3°:Plantar/Adaptação/Perspectivas/Logística <br> 4°:Ouvir o time, parar e atirar, combar o inimigo <br> 5°: Execução/Informações/Planejamento "
+        ]
+        for (let i = 0; i < certas.length; i++) {
+            certas[i]
+            div_certas.innerHTML = `${certas}`
+        }
+    }
+</script>

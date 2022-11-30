@@ -1,0 +1,160 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+.janela {
+    display: flex;
+    margin-left: 4%;
+    width: 100vw;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: #fe4553;
+}
+
+.header-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 3px solid #fe4553;
+    background-color: #101823;
+}
+
+.header-left h1 {
+    color: #fe4553;
+}
+
+.hello {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fe4553;
+}
+
+.userimg{
+    width: 125px;
+    height: 125px;
+    left: 125px;
+    top: 135px;     
+}
+
+.logout {
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    left: 125px;
+}
+
+.hello h3 {
+    color: #fe4553;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.hello h3 span {
+    font-weight: 800;
+}
+
+.btn-nav {
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2% 5%;
+}
+
+.btn-nav-white {
+    text-align: center;
+    width: 50%;
+}
+
+.header-left .img{
+    margin-left: -100%;
+    margin-bottom: -25%;
+}
+
+.btn-nav h3, .btn-logout h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-logout {
+    margin-top: 50px;
+    text-align: center; 
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.header-left button{
+    height: 5%;
+    width: 25%;
+    padding: 5px;
+    border: 2px solid;
+    color: #FE4553;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.grafico .caixa{
+    display: flex;
+    width: 450px;
+    height: 350px;
+    margin-left: 340px;
+    margin-bottom: -250px;
+    margin-block-start: -8%;
+}
+
+.grafico h3{
+    color: #FE4553;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    margin-top: -155px;
+    font-size: 30px;
+}
+
+.grafico p{
+    color: #FE4553;
+    height: 15vh;
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 310px;
+    font-size: 20px;
+}
+
+.grafico{
+    width: 80vw;
+    height: 80vh;
+    background-color: #101823;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-left: 19%;
+}
+
+.grafico .caixa .canvas{
+    display: block;
+    box-sizing: border-box;
+    height: 300px;
+    width: 456px;
+    margin-left: 6500px;
+    margin-top: 65px;
+    background-color: #FE4553;
+}
